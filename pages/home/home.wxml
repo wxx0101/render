@@ -1,0 +1,22 @@
+<view class='wrap'>
+  <view class='top'>
+    <input placeholder='搜索你感兴趣的人和物' bindtap="searchFn" />
+    <image src="../../image/bg.png" />
+  </view>
+
+  <swiper autoplay interval="1000" circular previous-margin="15px" next-margin="15px">
+    <swiper-item wx:for="{{bannerdata}}" wx:key="{{index}}">
+      <image src="{{item.img}}" />
+    </swiper-item>
+  </swiper>
+  <scroll-view class='content' scroll-y bindscrolltolower="scrollFn">
+    <view class='scroll_box'>
+      <view class='content_item' wx:for="{{listdata}}" wx:key="{{index}}">
+        <image src="{{item.topicPic}}" />
+        <text>{{item.topicTitle}}</text>
+        <text>{{item.price}}</text>
+        <text>{{item.homeCity}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

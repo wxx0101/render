@@ -1,0 +1,68 @@
+page{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+} 
+.wrap{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+.top{
+  width: 100%;
+  height: 330rpx;
+  background: #34C25E;
+  border-radius: 0 0 30% 30%;
+  display: flex;
+  flex-direction: column;
+}
+.top input{
+  width: 90%;
+  background: #fff;
+  margin: 4%;
+  border-radius: 20rpx;
+  padding-left: 3%;
+  font-size: 30rpx;
+}
+swiper{
+  width: 100%;
+  height: 240rpx;
+  margin: 5% 0;
+}
+swiper swiper-item image{
+  width: 100%;
+  height: 100%;
+}
+.content{
+  flex: 1;
+  overflow: auto;
+}
+.scroll_box{
+  display: flex;
+  flex-wrap: wrap; 
+  flex-shrink: 0;
+}
+.content .content_item{
+  width: 46%;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 2%;
+}
+.content .content_item image{
+  width: 100%;
+  height: 300rpx;
+}
+.content .content_item text:nth-child(2){
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

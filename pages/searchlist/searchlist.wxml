@@ -1,0 +1,8 @@
+<scroll-view scroll-y bindscrolltolower="bottomFn">
+  <view class='list_box'>
+    <view class='item' wx:for="{{newArr}}" wx:key="index">
+      <image binderror='errorFn' src="{{item.topicPic}}" data-ind='{{index}}' />
+      <text>{{item.topicTitle}}</text>
+    </view>
+  </view>
+</scroll-view>

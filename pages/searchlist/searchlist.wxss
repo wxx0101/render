@@ -1,0 +1,36 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+scroll-view{
+  height: 100%;
+}
+.list_box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  /* justify-content: center;
+  align-items: center; */
+}
+.list_box .item{
+  width: 45%;
+  height: 400rpx;
+  background: #eee;
+  border-radius: 10px;
+  margin: 2%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.list_box .item image{
+  width: 100%;
+  height: 330rpx;
+}
+.list_box .item text{
+  width: 95%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

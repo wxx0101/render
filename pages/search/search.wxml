@@ -1,0 +1,13 @@
+<view class='search_box'>
+  <input placeholder="请输入关键字" value="{{val}}" bindinput="InputFn" />
+  <button bindtap="searchFn">OK</button>
+</view>
+<!-- <text wx:for="{{hotdata}}" wx:key="index"> 
+    {{item.recommendText}}
+</text> -->
+<view class='content' wx:if="{{dataList.length}}">
+  <text wx:for="{{dataList}}" wx:key="index" class="{{index ==currentInd ? 'show' : ''}}" data-ind='{{index}}' bindtap="listFn">{{item}}</text>
+</view>
+<view wx:else="{{!dataList.length}}" class='content'>
+  <text>暂无数据</text>
+</view>
